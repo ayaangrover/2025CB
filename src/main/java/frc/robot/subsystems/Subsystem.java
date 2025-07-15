@@ -25,7 +25,6 @@ public class Subsystem extends SubsystemBase
 	@Override
 	public void periodic() 
 	{
-		// TODO: increment testValue by 0.1
 	}
 
 	// This method will be called once per scheduler run during simulation
