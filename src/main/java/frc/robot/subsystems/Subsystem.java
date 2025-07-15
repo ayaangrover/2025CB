@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 /**
  * TODO: Create a field (instance) variable and call it something like "testValue".
- * Also write an accessor method.
+ * Also write an accessor method. Increment testValue by 0.1 continually each cycle
  */
 public class Subsystem extends SubsystemBase 
 {
