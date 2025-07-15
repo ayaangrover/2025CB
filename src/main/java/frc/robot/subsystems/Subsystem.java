@@ -16,10 +16,6 @@ public class Subsystem extends SubsystemBase
 	private static Subsystem instance;
 	/** Creates a new ExampleSubsystem. */
 
-	// SOLUTION
-	private double testValue = 0;
-	public double getTestValue () {return testValue;}
-	// /SOLUTION
 
 
 	private Subsystem() {}
@@ -30,9 +26,6 @@ public class Subsystem extends SubsystemBase
 	@Override
 	public void periodic() 
 	{
-		// SOLUTION
-		testValue += 0.1;
-		// /SOLUTION
 	}
 
 	// This method will be called once per scheduler run during simulation

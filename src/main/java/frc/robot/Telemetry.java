@@ -24,9 +24,6 @@ public class Telemetry
     {
         // TODO: Set the value of the "test" publisher to Subsystem's "testValue" field.
 
-        // SOLUTION
-        test.set(Subsystem.getInstance().getTestValue());
-        // /SOLUTION
     }
     
 }
