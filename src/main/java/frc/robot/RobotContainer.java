@@ -4,6 +4,8 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import frc.robot.util.HSXboxController;
+import frc.robot.subsystems.Subsystem;
+import edu.wpi.first.wpilibj2.command.RunCommand;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -24,10 +26,15 @@ public class RobotContainer
 		configureBindings();
 	}
 
+	private final Subsystem m_subsystem = Subsystem.getInstance();
+
 	/**
 	 */
 	private void configureBindings() 
 	{
+		controller.button(1).whileTrue(m_subsystem.run(() -> m_subsystem.decrease()));
+		controller.button(2).whileTrue(m_subsystem.run(() -> m_subsystem.increase()));
+		controller.button(3).whileTrue(Subsystem.getInstance().run(() -> Subsystem.getInstance().continued()));
 	}
 
 	/**
